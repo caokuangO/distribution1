@@ -1,4 +1,4 @@
-package com.springboot_redis_example;
+package com.springbucks;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
