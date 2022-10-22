@@ -30,7 +30,7 @@ public class SwaggerConfig {
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
                 //页面标题
-                .title("Spring Boot 集成 Swagger2 测试接口文档")
+                .title("中电金信分布式03期第一次作业")
                 //创建人
                 .contact(new Contact("paul", "http://www.baidu.com", "920392918@qq.com"))
                 //版本号
