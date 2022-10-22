@@ -5,4 +5,7 @@
 (2).DruidCheck.java是作业二的功能
 (3)doc目录下"redis集群搭建.docx"是作业三的文档
 (4)doc目录下"redis命令.docx"是作业四练习的命令
+(5).分数排行榜，GlobalId.java,bitmap是作业五的功能DEMO
+![image](https://user-images.githubusercontent.com/43924951/197344871-1f4e530f-b1dd-411c-880a-fb163b265d63.png)
+
 
