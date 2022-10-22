@@ -1,12 +1,16 @@
 package com.springboot_redis_example.controller;
 
 import com.springboot_redis_example.entity.Student;
+import com.springboot_redis_example.entity.UserScore;
+import com.springboot_redis_example.service.RankService;
 import com.springboot_redis_example.service.StudentService;
 import com.springboot_redis_example.util.PageRequest;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 
 /**
@@ -19,6 +23,9 @@ public class StudentController {
 
     @Autowired
     private StudentService studentService;
+
+    @Autowired
+    private RankService rankService;
     @ApiOperation("根据id获取一名学生")// 为每个handler添加方法功能描述
     @GetMapping("/student/{id}")
     public Student getStudentById(@PathVariable("id") Integer id){
@@ -36,6 +43,22 @@ public class StudentController {
     @PostMapping(value="/findPage")
     public Object findPage(@RequestBody PageRequest pageQuery) {
         return studentService.findPage(pageQuery);
+    }
+
+    @ApiOperation("分数排行榜")
+    @PostMapping(value="/findUserScoreList")
+    public List<UserScore> getUserScoreList(){
+        return rankService.getUserScoreList();
+    }
+    @ApiOperation("添加分数")
+    @PostMapping("/addUserScore")
+    @ApiImplicitParam(name = "userScore", value = "添加分数", dataTypeClass = UserScore.class)
+    public Boolean addUserScore(UserScore userScore) {
+        Long zadd = rankService.insertUserScore(userScore);
+        if(zadd !=null && zadd!=0){
+            List<UserScore> rankingList = rankService.getUserScoreList();
+        }
+        return true;
     }
 
 }
