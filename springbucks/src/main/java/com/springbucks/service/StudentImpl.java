@@ -1,12 +1,12 @@
-package com.springboot_redis_example.service;
+package com.springbucks.service;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
-import com.springboot_redis_example.entity.Student;
-import com.springboot_redis_example.mapper.StudentMapper;
-import com.springboot_redis_example.util.PageRequest;
-import com.springboot_redis_example.util.PageResult;
-import com.springboot_redis_example.util.PageUtils;
+import com.springbucks.entity.Student;
+import com.springbucks.mapper.StudentMapper;
+import com.springbucks.util.PageRequest;
+import com.springbucks.util.PageResult;
+import com.springbucks.util.PageUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;

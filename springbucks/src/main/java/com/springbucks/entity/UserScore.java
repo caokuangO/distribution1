@@ -1,4 +1,4 @@
-package com.springboot_redis_example.entity;
+package com.springbucks.entity;
 
 public class UserScore {
     private int score;

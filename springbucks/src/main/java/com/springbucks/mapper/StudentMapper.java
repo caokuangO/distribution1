@@ -1,6 +1,6 @@
-package com.springboot_redis_example.mapper;
+package com.springbucks.mapper;
 
-import com.springboot_redis_example.entity.Student;
+import com.springbucks.entity.Student;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;

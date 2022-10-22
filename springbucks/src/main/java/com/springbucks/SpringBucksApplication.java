@@ -1,4 +1,4 @@
-package com.springboot_redis_example;
+package com.springbucks;
 
 
 import lombok.extern.slf4j.Slf4j;
@@ -11,9 +11,9 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @SpringBootApplication
 @Slf4j
 @EnableTransactionManagement
-public class SpringbootRedisApplication {
+public class SpringBucksApplication {
     public static void main(String[] args) {
-        SpringApplication.run(SpringbootRedisApplication.class, args);
+        SpringApplication.run(SpringBucksApplication.class, args);
     }
 
 }

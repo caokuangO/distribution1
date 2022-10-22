@@ -1,4 +1,4 @@
-package com.springboot_redis_example.util;
+package com.springbucks.util;
 
 import java.util.*;
 

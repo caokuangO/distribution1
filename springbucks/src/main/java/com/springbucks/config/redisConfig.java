@@ -1,9 +1,9 @@
-package com.springboot_redis_example.config;
+package com.springbucks.config;
 
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.annotation.PropertyAccessor;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.springboot_redis_example.entity.Student;
+import com.springbucks.entity.Student;
 import org.springframework.cache.CacheManager;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

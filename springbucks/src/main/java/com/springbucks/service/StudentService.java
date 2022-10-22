@@ -1,8 +1,8 @@
-package com.springboot_redis_example.service;
+package com.springbucks.service;
 
-import com.springboot_redis_example.entity.Student;
-import com.springboot_redis_example.util.PageRequest;
-import com.springboot_redis_example.util.PageResult;
+import com.springbucks.entity.Student;
+import com.springbucks.util.PageRequest;
+import com.springbucks.util.PageResult;
 
 
 /**

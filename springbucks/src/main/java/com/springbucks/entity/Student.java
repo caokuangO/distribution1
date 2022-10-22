@@ -1,4 +1,4 @@
-package com.springboot_redis_example.entity;
+package com.springbucks.entity;
 
 
 import java.io.Serializable;

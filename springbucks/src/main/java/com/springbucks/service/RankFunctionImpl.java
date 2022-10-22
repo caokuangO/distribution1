@@ -1,6 +1,8 @@
-package com.springboot_redis_example.service;
+package com.springbucks.service;
 
-import com.springboot_redis_example.entity.UserScore;
+import com.springbucks.config.SystemConfig;
+import com.springbucks.entity.UserScore;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.Tuple;
@@ -11,8 +13,9 @@ import java.util.Set;
 
 @Service("RankService")
 public class RankFunctionImpl implements RankService {
-
-    Jedis jedis = new Jedis("127.0.0.1", 6379);
+    @Autowired
+    SystemConfig systemConfig;
+    Jedis jedis = new Jedis(systemConfig.getProperty("spring.redis.host"), Integer.parseInt(systemConfig.getProperty("spring.redis.port")));
 
     @Override
     public List<UserScore> getUserScoreList() {

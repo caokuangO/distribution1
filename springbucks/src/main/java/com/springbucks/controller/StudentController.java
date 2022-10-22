@@ -1,10 +1,10 @@
-package com.springboot_redis_example.controller;
+package com.springbucks.controller;
 
-import com.springboot_redis_example.entity.Student;
-import com.springboot_redis_example.entity.UserScore;
-import com.springboot_redis_example.service.RankService;
-import com.springboot_redis_example.service.StudentService;
-import com.springboot_redis_example.util.PageRequest;
+import com.springbucks.entity.Student;
+import com.springbucks.entity.UserScore;
+import com.springbucks.service.RankService;
+import com.springbucks.service.StudentService;
+import com.springbucks.util.PageRequest;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
